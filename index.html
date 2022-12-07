@@ -2,16 +2,25 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!--Calculator body-->
-        <div> 
+        <div class="C_Body"> 
             <!--Calculator display-->
-            <div>
+            <div class="C_Display">
                 <input type="text">
             </div>
+            <!--Calculator deletes-->
+            <div class="C_Deletes">
+                <ul>
+                    <li><button>C</button></li>
+                    <li><button>Ce</button></li>
+                    <li><button>%</button></li>
+                </ul>
+            </div>
             <!--Calculator numbers, decimal point and equal-->
-            <div>
+            <div class="C_Numbers">
                 <ul>
                     <li><button>9</button></li>
                     <li><button>8</button></li>
@@ -31,20 +40,12 @@
                 </ul>
             </div>
             <!--Calculator aritmetical operators-->
-            <div>
+            <div class="C_Operators">
                 <ul>
                     <li><button>/</button></li>
                     <li><button>x</button></li>
                     <li><button>+</button></li>
                     <li><button>-</button></li>
-                </ul>
-            </div>
-            <!--Calculator deletes-->
-            <div>
-                <ul>
-                    <li><button>C</button></li>
-                    <li><button>Ce</button></li>
-                    <li><button>%</button></li>
                 </ul>
             </div>
         </div>

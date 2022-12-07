@@ -1,0 +1,11 @@
+ul{
+    list-style: none;
+}
+
+.C_Body{
+    background-color: rgb(96, 95, 95);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
