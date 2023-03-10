@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -9,45 +10,33 @@
         <div class="C_Body"> 
             <!--Calculator display-->
             <div class="C_Display">
-                <input type="text">
+                <div id="C_Result">355</div>
+                <div id="C_input">2</div>
             </div>
             <!--Calculator deletes-->
-            <div class="C_Deletes">
-                <ul>
-                    <li><button>C</button></li>
-                    <li><button>Ce</button></li>
-                    <li><button>%</button></li>
-                </ul>
-            </div>
+            <div class="C_Deletes"><button>C</button></div>
+            <div class="C_Deletes"><button>Ce</button></div>
+            <div class="C_Deletes"><button>%</button></div>
+            <div class="C_Operators"><button>/</button></div>
             <!--Calculator numbers, decimal point and equal-->
-            <div class="C_Numbers">
-                <ul>
-                    <li><button>9</button></li>
-                    <li><button>8</button></li>
-                    <li><button>7</button></li>
-                    
-                    <li><button>6</button></li>
-                    <li><button>5</button></li>
-                    <li><button>4</button></li>
-                    
-                    <li><button>3</button></li>
-                    <li><button>2</button></li>
-                    <li><button>1</button></li>
+            <div class="C_Numbers"><button>7</button></div>
+            <div class="C_Numbers"><button>8</button></div>
+            <div class="C_Numbers"><button>9</button></div>
+            <div class="C_Operators"><button>x</button></div>
 
-                    <li><button>0</button></li>
-                    <li><button>.</button></li>
-                    <li><button>=</button></li>
-                </ul>
-            </div>
-            <!--Calculator aritmetical operators-->
-            <div class="C_Operators">
-                <ul>
-                    <li><button>/</button></li>
-                    <li><button>x</button></li>
-                    <li><button>+</button></li>
-                    <li><button>-</button></li>
-                </ul>
-            </div>
+            <div class="C_Numbers"><button>4</button></div>
+            <div class="C_Numbers"><button>5</button></div>
+            <div class="C_Numbers"><button>6</button></div>
+            <div class="C_Operators"><button>-</button></div>
+
+            <div class="C_Numbers"><button>1</button></div>
+            <div class="C_Numbers"><button>2</button></div>
+            <div class="C_Numbers"><button>3</button></div>
+
+            <div class="C_Double"><button>+</button></div>
+            <div class="C_Numbers"><button>.</button></div>
+            <div class="C_Numbers"><button>0</button></div>
+            <div class="C_Operators"><button>=</button></div>                    
         </div>
     </body>
 </html>
