@@ -45,7 +45,7 @@ body {
 }
 
 .calculator-display * {
-    overflow: scroll;
+    overflow-x: auto;
     max-width: 95%;
 }
 
