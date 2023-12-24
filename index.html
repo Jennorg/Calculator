@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--Calculator body-->
-        <div class="C_Body"> 
-            <!--Calculator display-->
-            <div class="C_Display">
-                <div id="C_Result">355</div>
-                <div id="C_input">2</div>
-            </div>
-            <!--Calculator deletes-->
-            <div class="C_Deletes"><button>C</button></div>
-            <div class="C_Deletes"><button>Ce</button></div>
-            <div class="C_Deletes"><button>%</button></div>
-            <div class="C_Operators"><button>/</button></div>
-            <!--Calculator numbers, decimal point and equal-->
-            <div class="C_Numbers"><button>7</button></div>
-            <div class="C_Numbers"><button>8</button></div>
-            <div class="C_Numbers"><button>9</button></div>
-            <div class="C_Operators"><button>x</button></div>
-
-            <div class="C_Numbers"><button>4</button></div>
-            <div class="C_Numbers"><button>5</button></div>
-            <div class="C_Numbers"><button>6</button></div>
-            <div class="C_Operators"><button>-</button></div>
-
-            <div class="C_Numbers"><button>1</button></div>
-            <div class="C_Numbers"><button>2</button></div>
-            <div class="C_Numbers"><button>3</button></div>
-
-            <div class="C_Double"><button>+</button></div>
-            <div class="C_Numbers"><button>.</button></div>
-            <div class="C_Numbers"><button>0</button></div>
-            <div class="C_Operators"><button>=</button></div>                    
-        </div>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- Calculator body -->
+  <div class="calculator-body"> 
+    <!-- Calculator display -->
+    <div class="calculator-display">
+        <p id="result-display">3333</p>
+        <p id="input-display">55555</p>
+    </div>
+    <div class="calculator-buttons">
+      <!-- Calculator deletes -->
+      <button class="calculator-deletes" id="clear">C</button>
+      <button class="calculator-deletes" id="clear-entry">Ce</button>      
+      <!-- Calculator operators -->
+      <button class="calculator-operators" id="percentage">%</button>
+      <button class="calculator-operators" id="divide">/</button>
+      <button class="calculator-operators" id="multiply">x</button>
+      <button class="calculator-operators" id="subtract">-</button>
+      <button class="calculator-operators double-space"  id="add">+</button>
+      <button class="calculator-operators" id="equals">=</button>      
+      <!-- Calculator numbers, decimal point, and equal -->
+      <button class="calculator-numbers" id="nine">9</button>      
+      <button class="calculator-numbers" id="eight">8</button>
+      <button class="calculator-numbers" id="seven">7</button>
+      <button class="calculator-numbers" id="six">6</button>
+      <button class="calculator-numbers" id="five">5</button>
+      <button class="calculator-numbers" id="four">4</button>
+      <button class="calculator-numbers" id="three">3</button>
+      <button class="calculator-numbers" id="two">2</button>    
+      <button class="calculator-numbers" id="one">1</button>
+      <button class="calculator-numbers" id="zero">0</button>
+      <button class="calculator-numbers" id="decimal">.</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>

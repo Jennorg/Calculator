@@ -1,79 +1,162 @@
-*{
+* {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.09em;
     margin: 0;
     padding: 0;
-    background: none;
+    box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    background-color: #f0ce4e;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-}
-
-.C_Body{
+body {
     display: grid;
-    margin: 50px;
+    background-color: #f0ce4e;
+    place-content: center;
+    height: 100vh;
+    margin: 20px 30px;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 15px;
-    width: 300px;
-    height: 80vh;
+    width: 80vw;
+    max-width: 400px;
+    min-width: 200px;
+    height: 70vh;
     background-color: #a6ad3c;
     border-radius: 25px;
-    justify-items: center;
-
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: 20vh repeat(5, 75px);
-
-    box-shadow: 5px 5px 10px 3px #00000044
+    box-shadow: 5px 5px 10px 3px #00000044;
 }
 
-.C_Display{
-    width: 80%;
+.calculator-display {
+    width: 90%;
     height: 15vh;
     background-color: #f0ce4e80;
     border: #a6ad3c solid 1px;
     border-radius: 25px;
     justify-content: space-between;
     box-shadow: 5px 5px 10px 2px #00000049, -2px -2px 10px 2px #00000049;
-
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-self: center;
     padding-right: 15px;
-    margin: 10px;
-    grid-column: 1 / -1;
+    margin: 10px 10px 25px 10px;    
 }
 
-button{
+.calculator-display * {
+    overflow: scroll;
+    max-width: 95%;
+}
+
+#result-display {
+    font-size: 1.2em;
+}
+
+#input-display {
+    font-size: .8em;
+}
+
+.calculator-buttons {
+    height: 80%;
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "clearAll clear percentage dividing"
+    "seven eight nine multiplying"
+    "four five six subtracting"
+    "one two three adding"
+    "point zer equal adding";
+    gap: 10px;
+}
+
+#nine {
+    grid-area: nine;
+} 
+#eight {
+    grid-area: eight;
+} 
+#seven {
+    grid-area: seven;
+}
+#six {
+    grid-area: six;
+} 
+#five {
+    grid-area: five;
+}
+#four {
+    grid-area: four;
+}
+#three {
+    grid-area: three;
+}
+#two {
+    grid-area: two;
+}
+#one {
+    grid-area: one;
+}
+#zero {
+    grid-area: zer;
+}
+
+
+#clear {
+    grid-area: clearAll;
+}
+#clear-entry {
+    grid-area: clear;
+}
+
+#percentage {
+    grid-area: percentage;
+} 
+#add {
+    grid-area: adding;
+}
+#divide{
+    grid-area: dividing;
+} 
+#multiply {
+    grid-area: multiplying;
+}
+#subtract {
+    grid-area: subtracting;
+} 
+#equals {
+    grid-area: equal;
+}
+#decimal {
+    grid-area: point;
+}
+
+.calculator-deletes,
+.calculator-operators,
+.calculator-numbers {
+    width: 100%;
+    height: 100%;
+}
+
+button {
     border: none;
     background-color: #a6ad3c;
     box-shadow: 5px 5px 10px -3px #00000044, -3px -3px 15px 2px #00000044;
-    width: 60px;
-    height: 75%;
     border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
-button:hover{
+button:hover {
     background-color: #868f23;
 }
 
-button:focus{
+button:focus-visible {
     outline: none;
 }
 
-button:active{
+button:active {
+    transition: all 0s ease;
     background-color: #737a1e;
-}
-
-.C_Double{
-    grid-row: span 2;
-}
-
-.C_Double button{
-    height: 85%;
 }
